@@ -8,9 +8,9 @@ import SwiftUI
 import AVKit
 
 @available(iOS 14.0, *)
-struct ImpVideoPlayer: View {
+public struct ImpVideoPlayer: View {
     @Binding var videoUrl : String
-    var body: some View {
+    public var body: some View {
         VStack {
             VideoPlayer(player: AVPlayer(url: URL(string: videoUrl)!))
         }.edgesIgnoringSafeArea(.all)
